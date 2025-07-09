@@ -86,9 +86,13 @@ Interactive dashboard analyzing “best bang for buck” across fund types.
    ```bash
    pip install requests beautifulsoup4 pandas
 4. Run the notebook:
-   Jupyter notebook vanguard_fund_scraper.ipynb
+   jupyter notebook vanguard_fund_scraper.ipynb
 
 ## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
+Copyright (c) 2025 Nian Liu
+
+## Tags
+#python #webscraping #beautifulsoup #pandas #tableau #dataanalytics
