@@ -94,5 +94,5 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 Copyright (c) 2025 Nian Liu
 
-## Tags
+## 🏷️ Tags
 #python #webscraping #beautifulsoup #pandas #tableau #dataanalytics
