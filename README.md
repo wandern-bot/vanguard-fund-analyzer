@@ -1,23 +1,38 @@
-# vanguard-fund-analyzer
-This project scrapes, processes, and visualizes Vanguard mutual fund and ETF data to identify cost-efficient funds that deliver strong long-term performance.
+# 🏦vanguard-fund-analyzer
+
+>![Python](https://img.shields.io/badge/python-3.8+-blue) ![Scraping](https://img.shields.io/badge/web%20scraping-beautifulsoup4-green) ![Data](https://img.shields.io/badge/pandas-data%20cleaning-orange) ![Output](https://img.shields.io/badge/tableau-ready-purple) ![License](https://img.shields.io/badge/license-MIT-lightgrey) <br>
+>This project scrapes, processes, and visualizes Vanguard mutual fund and ETF data to identify cost-efficient funds that deliver strong long-term performance.
 
 ## 🔍 Project Goals
 
-- Collect fund-level data from Vanguard’s official website using Python
-- Compare fund performance across timeframes (YTD, 5Y, 10Y, Since Inception)
-- Enable interactive filtering by fund type, risk level, and return period
-- Highlight correlation between **low expense ratios** and **top-quartile returns**
+1. **Web Scraping Automation**
+   - Extract ETF and Mutual Fund data from [Vanguard's official listings](https://investor.vanguard.com/investment-products/list/all?filters=open)
+   - Built with Python (requests + BeautifulSoup)
 
----
+2. **Data Processing**
+   - Clean and normalize scraped data
+   - Prepare Tableau-ready datasets
+
+3. **Interactive Exploration**
+   - Enable filtering by fund type, risk level, and return period
+   - Tableau dashboard for visual analysis
+
+4. ** Performance Analysis and Insights**
+   - Compare funds across multiple timeframes (YTD, 5Y, 10Y, Since Inception)
+   - Identify correlation between low expense ratios (≤0.1%) and top-quartile returns
+
 
 ## 🚀 Features
 
-- ✅ Web scraping from Vanguard’s ETF & Mutual Fund listings  
-- ✅ Structured data export (`.csv`) for easy dashboard use  
-- ✅ Clean separation of fund types and investment metrics  
-- ✅ Tableau Public dashboard for interactive exploration  
-- ✅ Modern workflow using Google Colab + GitHub
+| Feature            | Description                             | Technology            |
+|--------------------|---------------------------------------- |---------------------- |
+| 🔍 Web Scraping   | Automated data collection from Vanguard | Python, BeautifulSoup  | 
+| 🧹 Data Cleaning  | Structured, analysis-ready datasets	   | Pandas                |
+| 📊 Visualization  | Interactive Tableau dashboard	         | Tableau Public        |
+| 🔄 Workflow       | Reproducibleanalysis pipeline            | Google Colab + GitHub | 
 
+  
+---
 
 ## 📁 Files in This Repo
 
@@ -34,13 +49,16 @@ This project scrapes, processes, and visualizes Vanguard mutual fund and ETF dat
 > **Sample CSV columns include:**
 > `Symbol`, `Fund Name`, `Expense Ratio`, `Risk Level`, `Return (Since Inception)`, `YTD Return`, `5Y Return`, `10Y Return`
 
-## 📊 Data Source
 
-All fund performance, expense ratio, and risk data was scraped from [Vanguard’s Investment Product Listings](https://investor.vanguard.com/investment-products/list/all?filters=open) as of the scrape date. The page includes all currently listed ETFs and Mutual Funds by Vanguard.
-> The cleaned ETF and Mutual Fund datasets are saved to the `/data` folder.
-> 
-> **Disclaimer:** This project is for educational purposes only and does not constitute financial advice. Data accuracy depends on the structure of Vanguard’s website at the time of scraping.
+## 📊 Data Pipeline
 
+```mermaid
+flowchart TB
+    A[Vanguard HTML] -->|BeautifulSoup| B(Raw Data)
+    B -->|pandas| C(Clean Data)
+    C -->|export| D[Tableau CSV]
+    D -->|visualize|E{{Dashboard}}
+```
 
 ## 📓 Notebook
 
@@ -62,11 +80,14 @@ The data scraper (`vanguard_fund_scraper.ipynb`) collects the following from Van
 Interactive dashboard analyzing “best bang for buck” across fund types.
 🔗 **[View the interactive dashboard on Tableau Public →](https://public.tableau.com/app/profile/nian.liu6717/viz/Vanguard_Funds_Best_Bang_Buck_Interactive_Analysis/VanguardUniverse)**  
 > Filter by fund type, risk level, or time horizon to find funds that match your investment goals.
-> 
-> Key Insight: "Across time horizons, a growing share of top-quartile Vanguard funds had expense ratios ≤ 0.1% — 59% YTD, 68% over 5 years, and 75% over 10 years. Cost efficiency increasingly correlates with sustained outperformance."
+>
+> **Key Insight:** <br>
+> 75% of top-quartile funds over 10 years had expense ratios ≤0.1%. <br>
+> Cost efficiency strongly correlates with sustained outperformance. <br>
+> Filter by fund type, risk level, or time horizon to match your investment preference. <br>
 
 
-![Dashboard Preview](./asset/vanguard_tableau_image.png)
+![Dashboard Preview](./asset/vanguard_tableau_preview.png)
 
 
 ---
@@ -85,13 +106,18 @@ Interactive dashboard analyzing “best bang for buck” across fund types.
 2. Install dependencies:
    ```bash
    pip install requests beautifulsoup4 pandas
+   ```
 4. Run the notebook:
-   jupyter notebook vanguard_fund_scraper.ipynb
+   ```
+   vanguard_fund_scraper.ipynb
+   ```
+   
+## ⚠️ **Disclaimer:** 
+This project for educational purpose only. Data accuracy depends on Vanguard's website structure at scrape time. Not financial advice.
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
-
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details. <br>
 Copyright (c) 2025 Nian Liu
 
 ## 🏷️ Tags
