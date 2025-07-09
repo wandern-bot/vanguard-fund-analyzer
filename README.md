@@ -23,32 +23,38 @@ This project scrapes, processes, and visualizes Vanguard mutual fund and ETF dat
 | File                             | Description                                       |
 |----------------------------------|-------------------------------------------------- |
 | `vanguard_fund_scraper.ipynb`    | Google Colab notebook with scraping logic         |
-| `vanguard_etfs.csv`              | Cleaned ETF data (automatically generated)        |
-| `vanguard_mutual_funds.csv`      | Cleaned Mutual Fund data (automatically generated)|
+| `data/vanguard_etfs.csv`              | Cleaned ETF data (automatically generated)        |
+| `data/vanguard_mutual_funds.csv`      | Cleaned Mutual Fund data (automatically generated)|
 | `README.md`                      | Project overview and documentation                |
 | `LICENSE`                        | MIT License for reuse and sharing                 |
 
-## 📓 Notebook & Data Source
+## 📊 Data Source
+
+All fund performance, expense ratio, and risk data was scraped from [Vanguard’s Investment Product Listings](https://investor.vanguard.com/investment-products/list/all?filters=open) as of the scrape date. The page includes all currently listed ETFs and Mutual Funds by Vanguard.
+> The cleaned ETF and Mutual Fund datasets are saved to the `/data` folder.
+> 
+> **Disclaimer:** This project is for educational purposes only and does not constitute financial advice. Data accuracy depends on the structure of Vanguard’s website at the time of scraping.
+
+## 📓 Notebook
 
 The data scraper (`vanguard_fund_scraper.ipynb`) collects the following from Vanguard's public site:
 - Fund names, Symbol, Categories
-- Annualized returns across multiple periods
+- Annualized returns across multiple periods (YTD, 5 year, 10 year, Since Inception)
 - Expense ratios
-- Risk scores
+- Risk levels
 
 The data is output as a `.csv` file for use in Tableau or other analysis tools.
-
 ➡️ [View Notebook on GitHub](./vanguard_fund_scraper.ipynb)
 
-### 📊 Tableau Dashboar
+## 📊 Tableau Dashboar
 
 Interactive dashboard analyzing “best bang for buck” across fund types.
 🔗 **[View the interactive dashboard on Tableau Public →](https://public.tableau.com/app/profile/nian.liu6717/viz/Vanguard_Funds_Best_Bang_Buck_Interactive_Analysis/VanguardUniverse)**  
 > Filter by fund type, risk level, or time horizon to find funds that match your investment goals.
-![image](https://github.com/user-attachments/assets/07bebc89-aac8-4de8-b6fb-bd4ea4348517)
-
 Key Insight:
 > "Across time horizons, a growing share of top-quartile Vanguard funds had expense ratios ≤ 0.1% — 59% YTD, 68% over 5 years, and 75% over 10 years. Cost efficiency increasingly correlates with sustained outperformance."
+
+![Dashboard Preview](./asset/vanguard_tableau_image.png)
 
 ---
 
@@ -70,3 +76,4 @@ Key Insight:
 ## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
