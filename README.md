@@ -20,15 +20,15 @@ This project scrapes, processes, and visualizes Vanguard mutual fund and ETF dat
 
 ## 📁 Files in This Repo
 
-| File                             | Description                                      |
-|----------------------------------|--------------------------------------------------|
-| `vanguard_fund_scraper.ipynb`    | Google Colab notebook with scraping logic        |
-| `vanguard_etfs.csv`              | Cleaned ETF data (automatically generated)       |
-| `vanguard_mutual_funds.csv`      | Cleaned ETF data (automatically generated)       |
-| `README.md`                      | Project overview and documentation               |
-| `LICENSE`                        | MIT License for reuse and sharing                |
+| File                             | Description                                       |
+|----------------------------------|-------------------------------------------------- |
+| `vanguard_fund_scraper.ipynb`    | Google Colab notebook with scraping logic         |
+| `vanguard_etfs.csv`              | Cleaned ETF data (automatically generated)        |
+| `vanguard_mutual_funds.csv`      | Cleaned Mutual Fund data (automatically generated)|
+| `README.md`                      | Project overview and documentation                |
+| `LICENSE`                        | MIT License for reuse and sharing                 |
 
-### 📓 Notebook
+## 📓 Notebook & Data Source
 
 The data scraper (`vanguard_fund_scraper.ipynb`) collects the following from Vanguard's public site:
 - Fund names, Symbol, Categories
@@ -52,9 +52,21 @@ Key Insight:
 
 ---
 
+## 🧪 Getting Started
+
+1. Open `vanguard_fund_scraper.ipynb` in Google Colab
+2. Run all cells to generate fresh data
+3. Download CSVs and load them into Tableau for visualization
+
+
 ## 💻 How to Run Locally
 
 1. Clone this repository
-2. Install dependencies:
-   ```bash
-   pip install requests beautifulsoup4 pandas
+2. Install dependencies: pip install requests beautifulsoup4 pandas
+3. Run the notebook:
+   '''bash
+   Jupyter notebook vanguard_fund_scraper.ipynb
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
