@@ -29,8 +29,10 @@ This project scrapes, processes, and visualizes Vanguard mutual fund and ETF dat
 | `README.md`                      | Project overview and documentation                |
 | `LICENSE`                        | MIT License for reuse and sharing                 |
 
-> **Note:** CSV files in `/data` are provided as examples only. You can regenerate them by running the notebook.<br>
-> **Sample CSV columns include:**<br>
+> **Note:** CSV files in `/data` are provided as examples only. You can regenerate them by running the notebook.
+> 
+> **Sample CSV columns include:**
+> 
 > `Symbol`, `Fund Name`, `Expense Ratio`, `Risk Level`, `Return (Since Inception)`, `YTD Return`, `5Y Return`, `10Y Return`
 
 ## 📊 Data Source
@@ -49,8 +51,10 @@ The data scraper (`vanguard_fund_scraper.ipynb`) collects the following from Van
 - Expense ratios
 - Risk levels
 
-> The HTML structure was manually explored via browser inspection to locate and extract deeply nested table headers and data cells across ETF and Mutual Fund pages.<br>
-> The data is output as a `.csv` file for use in Tableau or other analysis tools.<br>
+> The HTML structure was manually explored via browser inspection to locate and extract deeply nested table headers and data cells across ETF and Mutual Fund pages.
+> 
+> The data is output as a `.csv` file for use in Tableau or other analysis tools.
+> 
 > ➡️ [View Notebook on GitHub](./vanguard_fund_scraper.ipynb)
 
 
