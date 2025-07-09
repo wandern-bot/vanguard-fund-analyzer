@@ -32,7 +32,6 @@ This project scrapes, processes, and visualizes Vanguard mutual fund and ETF dat
 > **Note:** CSV files in `/data` are provided as examples only. You can regenerate them by running the notebook.
 > 
 > **Sample CSV columns include:**
-> 
 > `Symbol`, `Fund Name`, `Expense Ratio`, `Risk Level`, `Return (Since Inception)`, `YTD Return`, `5Y Return`, `10Y Return`
 
 ## 📊 Data Source
