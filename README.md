@@ -62,6 +62,7 @@ The data scraper (`vanguard_fund_scraper.ipynb`) collects the following from Van
 Interactive dashboard analyzing “best bang for buck” across fund types.
 🔗 **[View the interactive dashboard on Tableau Public →](https://public.tableau.com/app/profile/nian.liu6717/viz/Vanguard_Funds_Best_Bang_Buck_Interactive_Analysis/VanguardUniverse)**  
 > Filter by fund type, risk level, or time horizon to find funds that match your investment goals.
+> 
 > Key Insight: "Across time horizons, a growing share of top-quartile Vanguard funds had expense ratios ≤ 0.1% — 59% YTD, 68% over 5 years, and 75% over 10 years. Cost efficiency increasingly correlates with sustained outperformance."
 
 
