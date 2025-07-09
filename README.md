@@ -17,7 +17,7 @@
    - Enable filtering by fund type, risk level, and return period
    - Tableau dashboard for visual analysis
 
-4. ** Performance Analysis and Insights**
+4. **Performance Analysis and Insights**
    - Compare funds across multiple timeframes (YTD, 5Y, 10Y, Since Inception)
    - Identify correlation between low expense ratios (≤0.1%) and top-quartile returns
 
