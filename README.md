@@ -87,7 +87,7 @@ Interactive dashboard analyzing “best bang for buck” across fund types.
 > Filter by fund type, risk level, or time horizon to match your investment preference. <br>
 
 
-![Dashboard Preview](./asset/vanguard_tableau_preview.png)
+![Dashboard Preview](./asset/vanguard-tableau-preview.png)
 
 
 ---
