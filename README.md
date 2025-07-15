@@ -29,7 +29,7 @@
 | 🔍 Web Scraping   | Automated data collection from Vanguard | Python, BeautifulSoup  | 
 | 🧹 Data Cleaning  | Structured, analysis-ready datasets	   | Pandas                |
 | 📊 Visualization  | Interactive Tableau dashboard	         | Tableau Public        |
-| 🔄 Workflow       | Reproducibleanalysis pipeline            | Google Colab + GitHub | 
+| 🔄 Workflow       | Reproducible analysis pipeline          | Google Colab + GitHub | 
 
   
 ---
